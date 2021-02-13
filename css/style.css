@@ -1,0 +1,488 @@
+@font-face {
+    font-family:  iranSans;
+    src: url("/fonts/IRANSansWeb.woff")
+}
+
+body{
+    font-family: iranSans;
+    direction: rtl;
+    
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.145);
+    
+}
+#header img{
+    height: 100%;
+    
+}
+#header-links{
+display: flex;
+align-items: stretch;
+
+}
+#header-links a{
+    text-decoration: none;
+    display: inline-block;
+    
+    
+
+}
+#header-links a:nth-child(1){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0 ;
+}
+#header-links a:nth-child(2){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#ham-menu{
+    width: 45px;
+    height: 45px;
+    
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+#header-bottom{
+    z-index: 99;
+    
+    background-color: white;
+}
+
+
+#header-bottom a{
+    text-decoration: none;
+    
+    margin: 0 1px;
+    color: black;
+}
+
+#header-bottom .sub-menu{
+    position: absolute;
+    flex-direction: column;
+    width: max-content;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 16px -9px rgba(0,0,0,0.19); 
+    padding: 16px 16px;
+    color: #666;
+    box-shadow: 5px 5px 16px -9px rgba(0,0,0,0.19);
+    z-index: 999;
+    display: none;
+    top: 100%;
+    
+}
+.header-btn{
+    border-bottom: 1px solid transparent;
+    
+}
+.header-btn:hover{
+    border-bottom: 1px solid #0088cc;
+}
+#header-bottom .header-btn:focus + .sub-menu{
+    display: flex;
+
+   
+
+}
+.sub-menu a{
+padding-bottom: 5px;
+}
+#header-bottom a:hover{
+    color: #0088cc;
+    transition: 0.4s;
+}
+#header-bottom ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ham-menu span{
+    width: 80%;
+    height: 4px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: black;
+
+}
+
+.header-phone{
+    font-size: 13px;
+}
+#header-bottom{
+    box-shadow: 0 6px 30px -10px rgba(128, 128, 128, 0.179);
+}
+
+#mft-logo-small{
+    display: inline-block;
+    animation-name: mft-small-logo-animation ;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    height: 50px;
+}
+@keyframes mft-small-logo-animation{
+    0%{
+        width: 0px;
+
+    }
+    100%{
+     width: 50px;
+        
+    }
+}
+
+
+#page-content{
+    background-color: #f2efef;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+
+#calender-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.323);
+    position: relative;
+}
+
+#calender-line a{
+    display: inline-block;
+    border : 1px solid rgba(0, 0, 0, 0.487);
+    border-radius: 10px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(0, 0, 0);
+    padding: 8PX 16px;
+    z-index: 2;
+    background-color: white;
+}
+
+.class-box{
+    padding: 8px 16px ;
+    position: relative;
+    border-radius: 10px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 5px 5px 13px -8px rgba(0,0,0,0.83); 
+    box-shadow: 5px 5px 13px -8px rgba(0, 0, 0, 0.07);
+}
+.class-box i{
+    color: rgb(53, 53, 53);
+}
+
+[class*="class-box-line-"]{
+    margin-bottom: 5px;
+}
+.class-date-box{
+    text-align: center;
+}
+.class-date-box p{
+    margin: 0;padding: 0;
+}
+.class-box-line-1{
+    color: #0089c7;
+    
+}
+
+[class*="date-box-line-"]{
+    border: 1px solid rgba(0, 0, 0, 0.165);
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+.date-box-line-2{
+    border:none;
+    color: white;
+}
+.date-box-line-2 > div{
+    border:1px solid transparent;
+    border-radius: 10px;
+}
+.date-box-line-2 div:nth-child(2){
+    color: black;
+}
+.date-box-line-4 {
+    border:1px solid #e57a00;
+    color: #e57a00;
+    border-radius: 10px;
+}
+.date-box-line-4 a {
+    
+    color: #e57a00;
+    
+}
+.date-box-line-4 a:hover {
+    background-color: #e57a00 ;
+    
+    color: white;
+    
+}
+.date-box-line-2 div div:nth-child(1){
+    background-color: #5bbc2e;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.date-box-line-2 div:nth-child(2){
+    background-color: #eeeeee;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#magazine img{
+    width: 100%;
+    transition: 0.4s;
+    display: block;
+}
+
+#magazine .col-6{ 
+padding: 5px;
+
+}
+.magazine-image-container{
+    position: relative;
+}
+
+.magazine-text{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.magazine-title{
+    color: white;
+    background-color: rgba(67, 67, 67, 0.537);
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.magazine-description{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(67, 67, 67, 0.537);
+    border-radius: 10px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+.magazine-image-container img {
+border-radius: 10px;
+
+}
+
+.magazine-image-container img:hover {
+    filter: blur(2px) brightness(0.9);
+}
+
+.departments{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.departments p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.446);
+}
+
+.departments a{
+    text-decoration: none;
+    color: #4F5C6C;
+}
+
+.departments i{
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.news{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.news > p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news .row{
+    margin-bottom: 10px;
+}
+.news img{
+    border-radius: 10px;
+}
+.news .news-title{
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.news .news-time{
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #666;
+
+}
+
+.news a{
+    text-decoration: none;
+    color: #4F5C6C;
+}
+
+.news i{
+    margin-left: 5px;
+}
+
+
+
+.support{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    
+    color: #666;
+}
+
+.text-green{
+    color: #5bbc2e;
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-links a{
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+    color: #666;
+}
+.footer-links a:hover{
+    text-decoration: none;
+    color: #0088cc;
+}
+
+.footer-container{
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.05);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.05);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.05);
+}
+.footer-info{
+    color: #666;
+    font-size: 12px;
+
+}
+.footer-info p{
+    margin-bottom: 3px;
+}
+
+.footer-icons{
+    color: #0088cc;
+    font-size: 45px;
+}
+
+
+#fixed-chat-btn{
+    position: fixed;
+
+    bottom: 10px;
+    right: 10px;
+}
+#fixed-chat-btn a{
+    width: 55px;
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #0088cc;
+}
+#fixed-chat-btn a:hover{
+    background-color: whitesmoke;
+    color:  #0088cc;
+}
+
+
+.calendar-form label{
+    color: #80878F;
+    
+}
+.calendar-form input{
+    background-color: #f2efef;
+    border: 1px solid #00000020;
+    border-radius: 5px;
+    padding-right: 10px;
+    
+}
+
+.pagination a{
+    color: #4F5C6C !important;
+}
+/* responsive */
+
+@media only screen and (max-width:992px){
+    .header-btn{
+        color: white !important;
+    }
+    #header-bottom{
+        overflow-y: scroll;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(77, 77, 77);
+    }    
+    .sub-menu{
+        display: block !important;
+        position: static !important;
+        width: 90% !important;
+        margin: 10px auto;
+
+    }
+    .sub-menu a{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:552px){
+    #header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #header img{
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    
+}
